@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- index.html -->
+<html>
+    <style>
+        .content {
+            max-width: 500px;
+            margin:auto
+        }
+    </style>
+    <head>
+        <link rel="stylesheet" href="asg10Style.css">
+
+        <title>Asg10 Form 1 and 2</title><!-- comment -->
+    </head>
+    <body>
+    <div class="content">
+    <h1>Test my web form</h1><!-- comment -->
+    <p>To test my web form, please enter your information.</p><!-- comment -->
+    <form action="form-processor-one.jsp" method="get">
+    <table class="inline-block">
+        <tr><th id="th-id1" colspan="2">Start Here</th></tr>
+        <tr>
+            <td>First Name:</td><!-- comment -->
+            <td><input type="text" name="firstName"></td><!-- comment -->
+        </tr>
+        
+        <tr>
+            <td>Last Name:</td><!-- comment -->
+            <td><input type="text" name="lastName"></td><!-- comment -->
+        </tr>
+        
+        <tr>
+            <td>College Name:</td><!-- comment -->
+            <td><input type="text" name="collegeName"></td><!-- comment -->
+        </tr>
+        
+        <tr>
+            <td>Phone Number:</td><!-- comment -->
+            <td><input type="text" name="phoneNumber"></td><!-- comment -->
+        </tr>
+        <tr>
+            <td></td>
+            <td><br><input type="submit" value="Submit Entries"></td><!-- comment -->
+        </tr>
+        </table>
+    </form>
+    <br>
+    <form action="form-processor-two.jsp" method="POST">
+        <select name="favoriteSport" >
+            <optgroup label="Favorite Sport?">
+                <option>Baseball</option><!-- comment -->
+                <option>Football</option>
+                <option>Sparring</option>
+                <option>Watching Tv</option>
+            </optgroup>
+        </select>
+        <select name="favoriteTeam" >
+            <optgroup label="Favorite Sports Team?">
+                <option>Baseball Team</option><!-- comment -->
+                <option>Football Team</option>
+                <option>Sparring Team</option>
+                <option>Tv network</option> 
+            </optgroup>    
+        </select>
+        <select name="favoritePlayer" >
+            <optgroup label="Favorite Player?">
+                <option>Baseball Player</option><!-- comment -->
+                <option>Football Player</option>
+                <option>Sparring Partner</option>
+                <option>Tv Channel</option>
+            </optgroup>    
+        </select>
+        <br>
+        <br>
+        <label for="favReason">Why are these choices your favorite?</label><!-- comment -->
+        <br>
+        <textarea id="favReason" name="text" rows="4" cols="50"></textarea>
+        <br>
+        
+        <input type="submit" value="Submit Favorites"><!-- comment -->
+        
+    </form>
+    </div><!-- comment -->
+   
+    
+    </body>
+</html>
+
+
+<!--
+
+
+/* Form Layout Styles */
+
+label {
+   display: block;
+   float: left;
+   clear: left;
+   margin: 5px;
+   width: 200px;
+}
+
+input, select, textarea {
+   display: block;
+   float: left;
+   margin: 5px 0px;
+   width: 200px;
+}
+
+textarea {
+   height: 100px;
+}
+
+form p {
+   clear: left;
+   text-align: center;
+   padding-top: 40px;
+}
+
+input[type='submit'] {
+   background-color: rgb(144, 170, 144);
+   color: rgb(245,245,165);
+   border-radius: 20px;
+   float: none;
+   display: inline;
+   font-size: 1.1em;
+   height: 30px;
+   width: 150px;
+}
+-->
+
+<!--
+
+
